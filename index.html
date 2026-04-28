@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aero - Premium Weather Dashboard</title>
+    <!-- SEO meta tags -->
+    <meta name="description" content="Aero is a premium, real-time weather dashboard featuring the latest meteorological data, insights, and our extensive weather blog.">
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background animations -->
+    <div class="bg-gradient"></div>
+    <div class="bg-orbs">~
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+    </div>
+
+    <div id="app">
+        <header class="glass-nav">
+            <div class="logo">
+                <span class="logo-icon">🌤</span>
+                <span class="logo-text">Aero</span>
+            </div>
+            <nav id="nav-menu">
+                <button class="nav-item active" data-target="home">Dashboard</button>
+                <button class="nav-item" data-target="about">About</button>
+                <button class="nav-item" data-target="blog">Blog</button>
+            </nav>
+            <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </header>
+
+        <main id="main-content" class="fade-in">
+            <!-- Dynamic content will be injected here via JavaScript -->
+        </main>
+
+        <footer class="glass-footer">
+            <p>&copy; 2026 Aero Weather Dashboard. Beautifully designed.</p>
+        </footer>
+    </div>
+    
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
