@@ -237,6 +237,236 @@ They improve:
         content: `
 Sunny weather boosts mood, while cloudy days may reduce energy levels.
 `
+    },
+
+    {
+        id: 11,
+        slug: "understanding-humidity",
+        title: "Understanding Humidity",
+        metaTitle: "What is Humidity | Effects on Weather and Comfort",
+        metaDescription: "Understand how humidity impacts weather and daily comfort levels.",
+        date: "2026-04-07",
+        lastUpdated: "2026-04-07",
+        author: "Aero Weather Team",
+        category: "Weather Basics",
+        tags: ["humidity", "weather basics"],
+        keywords: ["humidity meaning", "air moisture"],
+        readTime: "4 min read",
+        image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9",
+        excerpt: "Humidity explained simply.",
+        content: `
+Humidity measures moisture in air.
+
+High humidity:
+• Feels warmer
+• Causes discomfort`
+    },
+
+    {
+        id: 12,
+        slug: "air-quality-and-weather",
+        title: "Air Quality and Weather",
+        metaTitle: "Air Quality Index Explained | Weather Impact",
+        metaDescription: "Learn how weather conditions affect air quality and pollution levels.",
+        date: "2026-04-08",
+        lastUpdated: "2026-04-09",
+        author: "Aero Weather Team",
+        category: "Environment",
+        tags: ["air quality", "pollution"],
+        keywords: ["AQI meaning", "air pollution weather"],
+        readTime: "5 min read",
+        image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+        excerpt: "Weather impacts air quality.",
+        content: `
+Weather affects pollution dispersion.
+
+Wind and rain:
+• Reduce pollution
+• Improve air quality`
+    },
+
+    {
+        id: 13,
+        slug: "cyclone-warning-signs",
+        title: "Cyclone Warning Signs",
+        metaTitle: "Cyclone Signs & Safety Tips | Storm Preparedness",
+        metaDescription: "Identify cyclone warning signs and learn how to stay safe during storms.",
+        date: "2026-04-10",
+        lastUpdated: "2026-04-10",
+        author: "Aero Weather Team",
+        category: "Extreme Weather",
+        tags: ["cyclone", "storm"],
+        keywords: ["cyclone signs", "storm safety"],
+        readTime: "4 min read",
+        image: "https://images.unsplash.com/photo-1500673922987-e212871fec22",
+        excerpt: "Recognize cyclone alerts early.",
+        content: `
+Cyclones bring strong winds and rain.
+
+Watch for:
+• Sudden pressure drop
+• Strong winds`
+    },
+
+    {
+        id: 14,
+        slug: "winter-weather-tips",
+        title: "Winter Weather Tips",
+        metaTitle: "Winter Safety Tips | Cold Weather Guide",
+        metaDescription: "Stay warm and safe during winter with practical weather tips.",
+        date: "2026-04-11",
+        lastUpdated: "2026-04-11",
+        author: "Aero Weather Team",
+        category: "Seasonal Weather",
+        tags: ["winter", "cold weather"],
+        keywords: ["winter tips", "cold protection"],
+        readTime: "3 min read",
+        image: "https://images.unsplash.com/photo-1483664852095-d6cc6870702d",
+        excerpt: "Stay safe in cold weather.",
+        content: `
+Cold weather can affect health.
+
+Protect yourself:
+• Wear layers
+• Stay warm indoors`
+    },
+
+    {
+        id: 15,
+        slug: "thunderstorm-safety-guide",
+        title: "Thunderstorm Safety Guide",
+        metaTitle: "Thunderstorm Safety Tips | Lightning Protection Guide",
+        metaDescription: "Learn how to stay safe during thunderstorms and avoid lightning hazards.",
+        date: "2026-04-12",
+        lastUpdated: "2026-04-12",
+        author: "Aero Weather Team",
+        category: "Extreme Weather",
+        tags: ["thunderstorm", "lightning"],
+        keywords: ["lightning safety", "storm tips"],
+        readTime: "4 min read",
+        image: "https://images.unsplash.com/photo-1500674425229-f692875b0ab7",
+        excerpt: "Stay safe during storms.",
+        content: `
+Thunderstorms can be dangerous.
+
+Safety tips:
+• Stay indoors
+• Avoid electrical devices`
+    },
+
+    {
+        id: 16,
+        slug: "weather-forecasting-basics",
+        title: "Weather Forecasting Basics",
+        metaTitle: "How Weather Forecasting Works | Beginner Guide",
+        metaDescription: "Understand how meteorologists predict weather using data and models.",
+        date: "2026-04-13",
+        lastUpdated: "2026-04-13",
+        author: "Aero Weather Team",
+        category: "Weather Basics",
+        tags: ["forecasting", "meteorology"],
+        keywords: ["weather prediction", "forecast models"],
+        readTime: "5 min read",
+        image: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5",
+        excerpt: "How forecasts are made.",
+        content: `
+Forecasting uses data and models.
+
+It includes:
+• Satellite data
+• Computer simulations`
+    },
+
+    {
+        id: 17,
+        slug: "fog-and-visibility-explained",
+        title: "Fog and Visibility Explained",
+        metaTitle: "What Causes Fog | Visibility and Weather Guide",
+        metaDescription: "Learn how fog forms and how it affects visibility and travel safety.",
+        date: "2026-04-14",
+        lastUpdated: "2026-04-14",
+        author: "Aero Weather Team",
+        category: "Weather Basics",
+        tags: ["fog", "visibility"],
+        keywords: ["fog formation", "low visibility"],
+        readTime: "3 min read",
+        image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9",
+        excerpt: "Fog explained simply.",
+        content: `
+Fog reduces visibility significantly.
+
+It forms when:
+• Air cools to dew point
+• Moisture condenses`
+    },
+
+    {
+        id: 18,
+        slug: "climate-change-impact-weather",
+        title: "Climate Change Impact on Weather",
+        metaTitle: "Climate Change Effects on Weather Patterns",
+        metaDescription: "Discover how climate change is altering global weather patterns and extremes.",
+        date: "2026-04-15",
+        lastUpdated: "2026-04-16",
+        author: "Aero Weather Team",
+        category: "Climate",
+        tags: ["climate change", "weather patterns"],
+        keywords: ["climate impact", "global warming weather"],
+        readTime: "5 min read",
+        image: "https://images.unsplash.com/photo-1472214103451-9374bd1c798e",
+        excerpt: "Climate affects weather.",
+        content: `
+Climate change increases extremes.
+
+Effects include:
+• More heatwaves
+• Stronger storms`
+    },
+
+    {
+        id: 19,
+        slug: "wind-speed-and-its-effects",
+        title: "Wind Speed and Its Effects",
+        metaTitle: "Wind Speed Explained | Impact on Weather and Daily Life",
+        metaDescription: "Understand how wind speed affects weather conditions and daily activities.",
+        date: "2026-04-17",
+        lastUpdated: "2026-04-17",
+        author: "Aero Weather Team",
+        category: "Weather Basics",
+        tags: ["wind", "weather"],
+        keywords: ["wind speed meaning", "wind effects"],
+        readTime: "3 min read",
+        image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+        excerpt: "Wind impacts daily life.",
+        content: `
+Wind influences weather patterns.
+
+Strong winds can:
+• Cause damage
+• Affect travel`
+    },
+
+    {
+        id: 20,
+        slug: "daily-weather-importance",
+        title: "Why Daily Weather Matters",
+        metaTitle: "Importance of Daily Weather Updates",
+        metaDescription: "Learn why checking daily weather forecasts is essential for planning and safety.",
+        date: "2026-04-18",
+        lastUpdated: "2026-04-18",
+        author: "Aero Weather Team",
+        category: "General",
+        tags: ["daily weather", "forecast"],
+        keywords: ["weather importance", "daily forecast"],
+        readTime: "3 min read",
+        image: "https://images.unsplash.com/photo-1501973801540-537f08ccae7b",
+        excerpt: "Why weather updates matter.",
+        content: `
+Weather affects daily planning.
+
+It helps in:
+• Travel decisions
+• Safety awareness`
     }
 
 ];
