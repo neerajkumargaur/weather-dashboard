@@ -3,71 +3,71 @@
 
     <!-- Home -->
     <url>
-        <loc>https://yourdomain.com/</loc>
+        <loc>https://weatherdashboard.shopwithme.in/</loc>
         <priority>1.0</priority>
     </url>
 
     <!-- About -->
     <url>
-        <loc>https://yourdomain.com/about.html</loc>
+        <loc>https://weatherdashboard.shopwithme.in/about.html</loc>
         <priority>0.8</priority>
     </url>
 
     <!-- Blogs List -->
     <url>
-        <loc>https://yourdomain.com/blogs.html</loc>
+        <loc>https://weatherdashboard.shopwithme.in/blogs.html</loc>
         <priority>0.9</priority>
     </url>
 
     <!-- Blog Pages (your format) -->
 
     <url>
-        <loc>https://yourdomain.com/blogs.html?slugid=rise-of-extreme-weather-patterns-2026</loc>
+        <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=rise-of-extreme-weather-patterns-2026</loc>
         <priority>0.7</priority>
     </url>
 
     <url>
-        <loc>https://yourdomain.com/blogs.html?slugid=urban-microclimates-explained</loc>
+        <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=urban-microclimates-explained</loc>
         <priority>0.7</priority>
     </url>
 
     <url>
-        <loc>https://yourdomain.com/blogs.html?slugid=predict-rain-without-barometer</loc>
+        <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=predict-rain-without-barometer</loc>
         <priority>0.7</priority>
     </url>
 
     <url>
-        <loc>https://yourdomain.com/blogs.html?slugid=science-of-sunsets</loc>
+        <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=science-of-sunsets</loc>
         <priority>0.7</priority>
     </url>
 
     <url>
-        <loc>https://yourdomain.com/blogs.html?slugid=el-nino-vs-la-nina</loc>
+        <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=el-nino-vs-la-nina</loc>
         <priority>0.7</priority>
     </url>
 
     <url>
-        <loc>https://yourdomain.com/blogs.html?slugid=hurricane-preparation-guide</loc>
+        <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=hurricane-preparation-guide</loc>
         <priority>0.7</priority>
     </url>
 
     <url>
-        <loc>https://yourdomain.com/blogs.html?slugid=tornado-formation</loc>
+        <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=tornado-formation</loc>
         <priority>0.7</priority>
     </url>
 
     <url>
-        <loc>https://yourdomain.com/blogs.html?slugid=uv-index-safety</loc>
+        <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=uv-index-safety</loc>
         <priority>0.7</priority>
     </url>
 
     <url>
-        <loc>https://yourdomain.com/blogs.html?slugid=satellite-meteorology</loc>
+        <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=satellite-meteorology</loc>
         <priority>0.7</priority>
     </url>
 
     <url>
-        <loc>https://yourdomain.com/blogs.html?slugid=weather-and-mood</loc>
+        <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=weather-and-mood</loc>
         <priority>0.7</priority>
     </url>
 
