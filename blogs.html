@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- ✅ PRIMARY SEO -->
+    <title>Aero Weather Blogs | Climate Insights & Weather Articles</title>
+
+    <meta name="description"
+        content="Explore weather blogs, climate insights, and meteorological articles on Aero Weather Dashboard.">
+
+    <meta name="keywords" content="weather blogs, climate insights, meteorology articles, weather science">
+
+    <meta name="author" content="Aero Weather Team">
+    <meta name="robots" content="index, follow">
+
+    <!-- ✅ CANONICAL -->
+    <link rel="canonical" href="https://yourdomain.com/blogs.html">
+
+    <!-- ✅ OPEN GRAPH -->
+    <meta property="og:title" content="Aero Weather Blogs">
+    <meta property="og:description" content="Explore weather insights and climate science articles.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/blogs.html">
+    <meta property="og:image" content="https://yourdomain.com/preview.png">
+
+    <!-- ✅ TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Aero Weather Blogs">
+    <meta name="twitter:description" content="Weather insights and climate blogs.">
+    <meta name="twitter:image" content="https://yourdomain.com/preview.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ✅ STRUCTURED DATA (GENERAL PAGE) -->
+    <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Blog",
+ "name": "Aero Weather Blog",
+ "description": "Weather insights and climate articles",
+ "url": "https://yourdomain.com/blogs.html"
+}
+</script>
+
+</head>
+
+<body>
+
+    <div class="bg-gradient"></div>
+
+    <div id="app">
+
+        <div id="navbar"></div>
+
+        <main id="main-content" class="fade-in">
+
+            <!-- ✅ Hidden H1 for SEO -->
+            <h1 style="position:absolute; left:-9999px;">
+                Aero Weather Blog - Climate Insights and Weather Articles
+            </h1>
+
+        </main>
+
+    </div>
+
+    <script type="module">
+
+        import { blogs } from "./data/blogs.js";
+
+        /* -------- NAVBAR -------- */
+        fetch("navbar.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+
+                const currentPage = window.location.pathname.split("/").pop();
+
+                document.querySelectorAll(".nav-item").forEach(link => {
+                    if (link.getAttribute("href") === currentPage) {
+                        link.classList.add("active");
+                    }
+                });
+            });
+
+        /* -------- GET SLUG -------- */
+        const params = new URLSearchParams(window.location.search);
+        const slug = params.get("slugid");
+
+        /* -------- ROUTING -------- */
+        if (slug) {
+            showSingleBlog(slug);
+        } else {
+            showBlogList();
+        }
+
+        /* -------- BLOG LIST -------- */
+        function showBlogList() {
+
+            document.title = "Aero Weather Blogs | Climate Insights";
+
+            let html = `
+        <h1>Weather Insights Blog</h1>
+        <p class="lead">Explore climate insights and weather science.</p>
+        <div class="blog-grid">
+    `;
+
+            blogs.forEach(blog => {
+
+                const author = blog.author || "Aero Team";
+                const readTime = blog.readTime || "";
+                const category = blog.category || "";
+
+                html += `
+        <article class="glass-card blog-card" onclick="openBlog('${blog.slug}')">
+
+            <div class="blog-image-wrapper">
+                <img src="${blog.image}" class="blog-image" alt="${blog.title}">
+            </div>
+
+            <div class="blog-content">
+                <div class="blog-date">${blog.date || ""}</div>
+
+                <h3 class="blog-title">${blog.title}</h3>
+
+                <p class="blog-excerpt">${blog.excerpt || ""}</p>
+
+                <!-- ✅ NEW META INFO -->
+                <div class="blog-meta">
+                    ${author} ${readTime ? "• " + readTime : ""} ${category ? "• " + category : ""}
+                </div>
+
+                <div class="read-more">Read Article</div>
+            </div>
+
+        </article>
+        `;
+            });
+
+            html += `</div>`;
+            document.getElementById("main-content").innerHTML = html;
+        }
+        /* -------- SINGLE BLOG -------- */
+        function showSingleBlog(slug) {
+
+            const blog = blogs.find(b => b.slug === slug);
+
+            if (!blog) {
+                document.getElementById("main-content").innerHTML =
+                    `<div class="error-msg">Blog not found</div>`;
+                return;
+            }
+
+            /* ✅ SEO FALLBACK LOGIC */
+            const metaTitle = blog.metaTitle || blog.title;
+            const metaDesc = blog.metaDescription || blog.excerpt || "";
+
+            document.title = metaTitle + " | Aero Weather";
+
+            document.querySelector('meta[name="description"]')
+                .setAttribute("content", metaDesc);
+
+            /* ✅ STRUCTURED DATA (ENHANCED) */
+            const schema = {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": blog.title,
+                "description": metaDesc,
+                "image": blog.image,
+                "datePublished": blog.date,
+                "dateModified": blog.lastUpdated || blog.date,
+                "author": {
+                    "@type": "Organization",
+                    "name": blog.author || "Aero Weather"
+                },
+                "keywords": (blog.tags || []).join(", ")
+            };
+
+            const script = document.createElement("script");
+            script.type = "application/ld+json";
+            script.text = JSON.stringify(schema);
+            document.head.appendChild(script);
+
+            /* UI */
+            const tagsHTML = blog.tags
+                ? `<div class="blog-tags">${blog.tags.map(t => `<span>#${t}</span>`).join(" ")}</div>`
+                : "";
+
+            document.getElementById("main-content").innerHTML = `
+        <div class="single-blog">
+
+            <button class="back-btn" onclick="goBack()">← Back</button>
+
+            <div class="blog-header">
+                <div class="blog-date">${blog.date || ""}</div>
+                <h1>${blog.title}</h1>
+
+                <!-- ✅ EXTRA INFO -->
+                <div class="blog-meta">
+                    ${blog.author || ""} 
+                    ${blog.readTime ? "• " + blog.readTime : ""} 
+                    ${blog.category ? "• " + blog.category : ""}
+                </div>
+            </div>
+
+            <img src="${blog.image}" class="blog-hero-img" alt="${blog.title}">
+
+            ${tagsHTML}
+
+            <div class="blog-body-text">
+                ${blog.content || ""}
+            </div>
+
+        </div>
+    `;
+        }
+        /* -------- NAV -------- */
+        window.openBlog = function (slug) {
+            window.location.href = `blogs.html?slugid=${slug}`;
+        }
+
+        window.goBack = function () {
+            window.location.href = "blogs.html";
+        }
+
+    </script>
+
+</body>
+
+</html>
