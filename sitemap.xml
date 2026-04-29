@@ -71,4 +71,54 @@
         <priority>0.7</priority>
     </url>
 
+    <url>
+  <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=understanding-humidity</loc>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=air-quality-and-weather</loc>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=cyclone-warning-signs</loc>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=winter-weather-tips</loc>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=thunderstorm-safety-guide</loc>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=weather-forecasting-basics</loc>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=fog-and-visibility-explained</loc>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=climate-change-impact-weather</loc>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=wind-speed-and-its-effects</loc>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=daily-weather-importance</loc>
+  <priority>0.7</priority>
+</url>
+
 </urlset>
