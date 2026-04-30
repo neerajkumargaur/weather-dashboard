@@ -13,112 +13,33 @@
         <priority>0.8</priority>
     </url>
 
-    <!-- Blogs List -->
+    <!-- Blogs -->
     <url>
         <loc>https://weatherdashboard.shopwithme.in/blogs.html</loc>
         <priority>0.9</priority>
     </url>
 
-    <!-- Blog Pages (your format) -->
+    <!-- ALL BLOGS (20/20 MATCHED) -->
 
-    <url>
-        <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=rise-of-extreme-weather-patterns-2026</loc>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
-        <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=urban-microclimates-explained</loc>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
-        <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=predict-rain-without-barometer</loc>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
-        <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=science-of-sunsets</loc>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
-        <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=el-nino-vs-la-nina</loc>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
-        <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=hurricane-preparation-guide</loc>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
-        <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=tornado-formation</loc>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
-        <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=uv-index-safety</loc>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
-        <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=satellite-meteorology</loc>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
-        <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=weather-and-mood</loc>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
-  <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=understanding-humidity</loc>
-  <priority>0.7</priority>
-</url>
-
-<url>
-  <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=air-quality-and-weather</loc>
-  <priority>0.7</priority>
-</url>
-
-<url>
-  <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=cyclone-warning-signs</loc>
-  <priority>0.7</priority>
-</url>
-
-<url>
-  <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=winter-weather-tips</loc>
-  <priority>0.7</priority>
-</url>
-
-<url>
-  <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=thunderstorm-safety-guide</loc>
-  <priority>0.7</priority>
-</url>
-
-<url>
-  <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=weather-forecasting-basics</loc>
-  <priority>0.7</priority>
-</url>
-
-<url>
-  <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=fog-and-visibility-explained</loc>
-  <priority>0.7</priority>
-</url>
-
-<url>
-  <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=climate-change-impact-weather</loc>
-  <priority>0.7</priority>
-</url>
-
-<url>
-  <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=wind-speed-and-its-effects</loc>
-  <priority>0.7</priority>
-</url>
-
-<url>
-  <loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=daily-weather-importance</loc>
-  <priority>0.7</priority>
-</url>
+    <url><loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=rise-of-extreme-weather-patterns-2026</loc></url>
+    <url><loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=urban-microclimates-explained</loc></url>
+    <url><loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=predict-rain-without-barometer</loc></url>
+    <url><loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=science-of-sunsets</loc></url>
+    <url><loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=el-nino-vs-la-nina</loc></url>
+    <url><loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=hurricane-preparation-guide</loc></url>
+    <url><loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=tornado-formation</loc></url>
+    <url><loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=uv-index-safety</loc></url>
+    <url><loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=satellite-meteorology</loc></url>
+    <url><loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=weather-and-mood</loc></url>
+    <url><loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=understanding-humidity</loc></url>
+    <url><loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=air-quality-and-weather</loc></url>
+    <url><loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=cyclone-warning-signs</loc></url>
+    <url><loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=winter-weather-tips</loc></url>
+    <url><loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=thunderstorm-safety-guide</loc></url>
+    <url><loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=weather-forecasting-basics</loc></url>
+    <url><loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=fog-and-visibility-explained</loc></url>
+    <url><loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=climate-change-impact-weather</loc></url>
+    <url><loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=wind-speed-and-its-effects</loc></url>
+    <url><loc>https://weatherdashboard.shopwithme.in/blogs.html?slugid=daily-weather-importance</loc></url>
 
 </urlset>
