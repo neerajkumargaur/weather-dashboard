@@ -152,31 +152,85 @@
 
     </div>
 
-   <script>
-fetch("navbar.html")
-    .then(res => res.text())
-    .then(data => {
-        document.getElementById("navbar").innerHTML = data;
+    <script>
 
-        const currentPage = window.location.pathname.split("/").pop();
+        /* NAVBAR */
+         fetch("navbar.html")
+  .then(res => res.text())
+  .then(data => {
+      document.getElementById("navbar").innerHTML = data;
 
-        document.querySelectorAll(".nav-item").forEach(link => {
-            if (link.getAttribute("href") === currentPage) {
-                link.classList.add("active");
+      const currentPage = window.location.pathname.split("/").pop();
+
+      document.querySelectorAll(".nav-item").forEach(link => {
+          if (link.getAttribute("href") === currentPage) {
+              link.classList.add("active");
+          }
+      });
+
+      // ✅ MOBILE MENU FIX
+      const toggle = document.getElementById("menu-toggle");
+      const menu = document.getElementById("nav-menu");
+
+      if (toggle && menu) {
+          toggle.addEventListener("click", () => {
+              menu.classList.toggle("active");
+          });
+
+          // optional: close on click
+          document.querySelectorAll(".nav-item").forEach(link => {
+              link.addEventListener("click", () => {
+                  menu.classList.remove("active");
+              });
+          });
+      }
+  });
+
+
+        /* WEATHER MAP */
+        const WMO_CODES = {
+            0: { desc: 'Clear sky', icon: '☀️' },
+            1: { desc: 'Mainly clear', icon: '🌤' },
+            2: { desc: 'Partly cloudy', icon: '⛅' },
+            3: { desc: 'Overcast', icon: '☁️' },
+            45: { desc: 'Fog', icon: '🌫' },
+            61: { desc: 'Rain', icon: '🌧' },
+            63: { desc: 'Moderate rain', icon: '🌧' },
+            65: { desc: 'Heavy rain', icon: '🌧' },
+            71: { desc: 'Snow', icon: '❄️' },
+            95: { desc: 'Thunderstorm', icon: '⛈' }
+        };
+
+
+        /* WEATHER */
+        async function loadWeather() {
+            try {
+                const res = await fetch(
+                    "https://api.open-meteo.com/v1/forecast?latitude=12.97&longitude=77.59&current=temperature_2m,relative_humidity_2m,apparent_temperature,weather_code,wind_speed_10m"
+                );
+
+                const data = await res.json();
+                const w = data.current;
+
+                const info = WMO_CODES[w.weather_code] || { desc: "Unknown", icon: "🌍" };
+
+                document.getElementById("location").innerText = "Bangalore, India";
+                document.getElementById("temp").innerText = Math.round(w.temperature_2m) + "°C";
+                document.getElementById("feels").innerText = Math.round(w.apparent_temperature) + "°C";
+                document.getElementById("humidity").innerText = w.relative_humidity_2m + "%";
+                document.getElementById("wind").innerText = w.wind_speed_10m + " km/h";
+
+                document.getElementById("condition").innerText =
+                    info.icon + " " + info.desc;
+
+            } catch {
+                document.getElementById("location").innerText = "Failed to load weather";
             }
-        });
-
-        // ✅ ADD THIS (mobile toggle fix)
-        const toggle = document.getElementById("menu-toggle");
-        const menu = document.getElementById("nav-menu");
-
-        if (toggle && menu) {
-            toggle.addEventListener("click", () => {
-                menu.classList.toggle("active");
-            });
         }
-    });
-</script>
+
+        loadWeather();
+
+    </script>
 
 </body>
 
